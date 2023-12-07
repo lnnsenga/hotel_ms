@@ -1,0 +1,166 @@
+
+{% extends 'hotel/base.html' %}
+{% load static %}
+{% block content %}
+{% include 'hotel/nav-bar.html' %}
+<main class="container">
+
+
+  <a style = "text-decoration:none;" href="{% url 'room_list' %}">
+    <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#return"/></svg>
+     Return
+  </a>
+
+    <div class="row g-5">
+        <div class="col-md-5 col-lg-6 order-md-last">
+        <strong> 
+          <h4 class="mb-3">Master Suite</h4>
+
+        </strong>          
+              
+
+      <div class="row g-3">
+        <div class="col-md-6">
+          <h8 style="font-weight: 700; color: rebeccapurple;">Bathroom Amenities:</h8>
+          <ul>
+              <li>Private bathroom with shower or bathtub</li>
+              <li>Hairdryer</li>
+              <li>Towels, bathrobes, and slippers</li>
+              <li>Toiletries such as shampoo, conditioner, soap, and lotion</li>
+          </ul>
+      </div>
+
+      <div class="col-md-6">
+          <h8 style="font-weight: 700; color: rebeccapurple;">Refreshments:</h8>
+          <ul>
+              <li>Mini refrigerator or minibar</li>
+              <li>Coffee maker or kettle with complimentary coffee and tea</li>
+              <li>Bottled water</li>
+          </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h8 style="font-weight: 700; color: rebeccapurple;">Safety and Security:</h8>
+        <ul>
+            <li>Electronic key card access</li>
+            <li>In-room safe for valuables</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h8 style="font-weight: 700; color: rebeccapurple;">Work and Connectivity:</h8>
+        <ul>
+            <li>Work desk and chair</li>
+            <li>Adequate lighting for work or reading</li>
+            <li>Multiple power outlets and USB ports</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+      <h8 style="font-weight: 700; color: rebeccapurple;">Storage:</h8>
+      <ul>
+          <li>Ample closet space with hangers</li>
+          <li>Luggage rack</li>
+      </ul>
+      </div>
+
+      <div class="col-md-6">
+      <h8 style="font-weight: 700; color: rebeccapurple;">Additional Comforts:</h8>
+      <ul>
+          <li>Blackout curtains for quality sleep</li>
+          <li>Iron and ironing board</li>
+          <li>Full-length mirror</li>
+      </ul>
+      </div>
+
+      <div class="col-md-6">
+       
+        <a class="w-100 btn btn-primary btn-lg"  href="{% url 'make_reservation' %}">Reserve</a>
+      </div>
+
+      <div class="col-md-6">
+        <a class="w-100 btn btn-primary btn-lg"  href="{% url 'book_room' %}">Book</a>
+      </div>
+
+      </div>
+
+
+
+
+
+
+
+            
+        </div>
+        
+
+        <div class="col">
+            <div class="card shadow-sm">
+       
+              <img src="{% static 'images/Business_Double.jpg'%}" class="d-block mx-lg-auto img-fluid" alt="Room" width="700" height="500" loading="lazy">
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                   
+                  </div>
+                  <h5  style="color:green;" style="font-weight:900" >TShs 120,000 / Night</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+
+          
+   
+    </div>
+  </main>
+{% endblock content%}
+
+
+
+
+<div class="row g-3">
+  <div class="col-md-6">
+      <h8 style="font-weight: 700; color: rebeccapurple;">Bedding and Furniture:</h8>
+      <ul>
+          <li>Comfortable and quality mattresses</li>
+          <li>Pillows and extra blankets</li>
+          <li>Adequate seating, such as chairs or a sofa</li>
+          <li>Work desk and chair</li>
+      </ul>             
+  </div>
+
+  <div class="col-md-6">
+      <h8 style="font-weight: 700; color: rebeccapurple;">Entertainment:</h8>
+      <ul>
+          <li>Flat-screen TV with cable or satellite channels</li>
+          <li>On-demand movies or streaming services</li>
+          <li>Radio or alarm clock</li>
+      </ul>             
+  </div>
+</div>
+
+<div class="row g-3">
+  <div class="col-md-6">
+      <h8 style="font-weight: 700; color: rebeccapurple;">Communication:</h8>
+      <ul>
+          <li>Telephone with voicemail</li>
+          <li>Free Wi-Fi or wired internet access</li>
+      </ul>
+  </div>
+
+  <div class="col-md-6">
+      <h8 style="font-weight: 700; color: rebeccapurple;">Climate Control:</h8>
+      <ul>
+          <li>Air conditioning or heating</li>
+          <li>Adjustable thermostat</li>
+      </ul>
+  </div>
+</div>
+
+
+
+
+
+
